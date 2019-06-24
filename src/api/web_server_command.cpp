@@ -11,6 +11,7 @@ namespace bubi {
 
 	void WebServer::SubmitTransaction(const http::server::request &request, std::string &reply) {
 
+		std::string tx_hash = "";
 		Json::Value body;
 		if (!body.fromString(request.body)) {
 			LOG_ERROR("Parse request body json failed");
@@ -159,6 +160,7 @@ namespace bubi {
 					signpro->set_sign_data(sign);
 					signpro->set_public_key(privateKey.GetBase16PublicKey());
 					result_item["hash"] = utils::String::BinToHexString(HashWrapper::Crypto(content));
+					tx_hash = utils::String::BinToHexString(HashWrapper::Crypto(content));
 				}
 
 				TransactionFrm frm(tran_env);
@@ -178,9 +180,13 @@ namespace bubi {
 			result_item["error_code"] = result.code();
 			result_item["error_desc"] = result.desc();
 		}
+
 		LOG_TRACE("Create %u transaction use " FMT_I64 "(ms)", json_items.size(),
 			(utils::Timestamp::HighResolution() - begin_time) / utils::MICRO_UNITS_PER_MILLI);
 
+		LOG_ERROR("transaction start time  FMT_I64 ,hash =  %s",
+			utils::Timestamp::HighResolution(), tx_hash.c_str());
+		
 
 		reply_json["success_count"] = success_count;
 		reply = reply_json.toStyledString();
