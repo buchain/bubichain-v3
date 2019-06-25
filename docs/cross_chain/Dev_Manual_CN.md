@@ -1,3 +1,4 @@
+[English](Dev_Manual_EN.md) | 中文
 # 开发手册
 
 ## 目录
