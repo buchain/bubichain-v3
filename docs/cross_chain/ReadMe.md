@@ -11,7 +11,7 @@ The framework is as follows:
 # Development Manual
 
 This development manual contains introduction to the test network, experiencing cross-chain, and development instructions
-[Development Manual](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/Dev_Manual_CN.md "Development Manual").
+[Development Manual](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/Dev_Manual_EN.md "Development Manual").
 
 
 # Contents of Code 
