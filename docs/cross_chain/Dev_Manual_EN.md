@@ -314,19 +314,19 @@ The implementation of the notary mechanism is divided into two parts, one is the
 
 ### Notary Program
 
-The notary program deals mainly with contracts for chain A and Chain B and implements the interaction process according to the rules of the protocol. Implemented in C++, [Contents of Code] (https://github.com/zjg555543/bubichain-v3/tree/feature/crosschain/src/notary "Contents of Code")
+The notary program deals mainly with contracts for chain A and Chain B and implements the interaction process according to the rules of the protocol. Implemented in C++, [Contents of Code] (https://github.com/buchain/buchain-v3/tree/feature/crosschain/src/notary "Contents of Code")
 
 ### Communication Contract
 
-https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js
+https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js
 
 ### Asset Contract
 
-https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js
+https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js
 
 ## Deployment Instruction
 
-The deployment of chain A and chain B refers to the deployment of the BUChain. [Deployment Documentation] (https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/manual.md "Deployment Documentation"), it should be noted that you need to configure the configuration file with the notary program. [Configuration File] (https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/build/win32/config/bubi.json "Configuration File")
+The deployment of chain A and chain B refers to the deployment of the BUChain. [Deployment Documentation] (https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/manual.md "Deployment Documentation"), it should be noted that you need to configure the configuration file with the notary program. [Configuration File] (https://github.com/buchain/buchain-v3/blob/feature/crosschain/build/win32/config/bubi.json "Configuration File")
 
 ### Deploying the Chain
 
@@ -341,7 +341,7 @@ The deployment of chain A and chain B refers to the deployment of the BUChain. [
 
 ### Deploying the Notary
 
-After the compilation is complete, run the `notary` program, and you need to pay attention to its [Configuration File] (https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/build/win32/config/notary. Json "profile")
+After the compilation is complete, run the `notary` program, and you need to pay attention to its [Configuration File] (https://github.com/buchain/buchain-v3/blob/feature/crosschain/build/win32/config/notary. Json "profile")
 
 ```
 {
@@ -371,12 +371,12 @@ After the compilation is complete, run the `notary` program, and you need to pay
 
 ### Deploying Contracts
 
-- [Creating Communication Contracts for Chain A](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainCom.txt "Creating Communication Contracts for Chain A")
-- [Creating Asset Contracts for Chain A](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainAsset.txt "Creating Asset Contracts for Chain A")
-- [Creating Communication Contracts for Chain B](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainComm.txt "Creating Communication Contracts for Chain B")
-- [Creating Asset Contracts for Chain B](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainAsset.txt "Creating Asset Contracts for Chain B")
-- [Initializing Communication Contracts for Chain A](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitAChainComm.txt "Initializing Communication Contracts for Chain A")
-- [Initializing Communication Contracts for Chain B](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitBChainComm.txt "Initializing Communication Contracts for Chain A")
-- [Issuing Assets on Chain A](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossIssueAChainAsset.txt "Issuing Assets on Chain A")
-- [Transferring Assets from Chain A to Communication Contracts](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainAsset.txt "Transferring Assets from Chain A to Communication Contracts")
-- [Triggering Communication Contracts](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainComm.txt "Triggering Communication Contracts")
+- [Creating Communication Contracts for Chain A](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainCom.txt "Creating Communication Contracts for Chain A")
+- [Creating Asset Contracts for Chain A](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainAsset.txt "Creating Asset Contracts for Chain A")
+- [Creating Communication Contracts for Chain B](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainComm.txt "Creating Communication Contracts for Chain B")
+- [Creating Asset Contracts for Chain B](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainAsset.txt "Creating Asset Contracts for Chain B")
+- [Initializing Communication Contracts for Chain A](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitAChainComm.txt "Initializing Communication Contracts for Chain A")
+- [Initializing Communication Contracts for Chain B](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitBChainComm.txt "Initializing Communication Contracts for Chain A")
+- [Issuing Assets on Chain A](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossIssueAChainAsset.txt "Issuing Assets on Chain A")
+- [Transferring Assets from Chain A to Communication Contracts](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainAsset.txt "Transferring Assets from Chain A to Communication Contracts")
+- [Triggering Communication Contracts](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainComm.txt "Triggering Communication Contracts")

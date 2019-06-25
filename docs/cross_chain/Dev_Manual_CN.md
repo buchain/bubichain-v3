@@ -307,16 +307,16 @@
 公证人机制的实现分为两部分，一是公证人程序，二是通讯合约和资产合约。
 
 ### 公证人程序
-公证人程序主要跟A链和B链的合约打交道，并根据协议规则，实现交互流程。使用C++实现，[代码目录](https://github.com/zjg555543/bubichain-v3/tree/feature/crosschain/src/notary "代码目录")
+公证人程序主要跟A链和B链的合约打交道，并根据协议规则，实现交互流程。使用C++实现，[代码目录](https://github.com/buchain/buchain-v3/tree/feature/crosschain/src/notary "代码目录")
 
 ### 通讯合约
-https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js
+https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js
 
 ### 资产合约
-https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js
+https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js
 
 ## 部署说明
-A链和B链的部署参考 buchain的部署。[部署文档](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/manual.md "部署文档")，需要注意的是要配置与公证人程序的配置文件，[配置文件](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/build/win32/config/bubi.json "配置文件")
+A链和B链的部署参考 buchain的部署。[部署文档](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/manual.md "部署文档")，需要注意的是要配置与公证人程序的配置文件，[配置文件](https://github.com/buchain/buchain-v3/blob/feature/crosschain/build/win32/config/bubi.json "配置文件")
 ### 部署链
 ```
 "cross": {
@@ -327,7 +327,7 @@ A链和B链的部署参考 buchain的部署。[部署文档](https://github.com/
 }
 ```
 ### 部署公证人
-编译完成后，运行`notary`程序即可，需要注意的是其[配置文件](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/build/win32/config/notary.json "配置文件")
+编译完成后，运行`notary`程序即可，需要注意的是其[配置文件](https://github.com/buchain/buchain-v3/blob/feature/crosschain/build/win32/config/notary.json "配置文件")
 
 ```
 {
@@ -356,12 +356,12 @@ A链和B链的部署参考 buchain的部署。[部署文档](https://github.com/
 ```
 
 ### 部署合约
-- [创建A链通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainCom.txt "创建A链通讯合约")
-- [创建A链资产合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainAsset.txt "创建A链资产合约")
-- [创建B链通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainComm.txt "创建B链通讯合约")
-- [创建B链资产合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainAsset.txt "创建B链资产合约")
-- [初始化A链通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitAChainComm.txt "初始化A链通讯合约")
-- [初始化B链通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitBChainComm.txt "初始化B链通讯合约")
-- [在A链发行资产](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossIssueAChainAsset.txt "在A链发行资产")
-- [转移A链资产给通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainAsset.txt "转移A链资产给通讯合约")
-- [触发通讯合约](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainComm.txt "触发通讯合约")
+- [创建A链通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainCom.txt "创建A链通讯合约")
+- [创建A链资产合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateAChainAsset.txt "创建A链资产合约")
+- [创建B链通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainComm.txt "创建B链通讯合约")
+- [创建B链资产合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/0-CreateBChainAsset.txt "创建B链资产合约")
+- [初始化A链通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitAChainComm.txt "初始化A链通讯合约")
+- [初始化B链通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/1-InitBChainComm.txt "初始化B链通讯合约")
+- [在A链发行资产](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossIssueAChainAsset.txt "在A链发行资产")
+- [转移A链资产给通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainAsset.txt "转移A链资产给通讯合约")
+- [触发通讯合约](https://github.com/buchain/buchain-v3/blob/feature/crosschain/docs/cross_chain/cross_step/2-CrossTransAChainComm.txt "触发通讯合约")
