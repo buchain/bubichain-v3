@@ -1,21 +1,23 @@
-[English](ReadMe_EN.md) | 中文
+English | [中文](ReadMe_CN.md) 
 
-# 框架
+# Framework
 
-我们设计了一套简洁、安全的跨链资产转移协议，并基于BUChain实现了跨链转移资产。
-框架图如下：
+We have designed a simple and secure protocol for cross-chain asset transfer and implemented cross-chain asset transfer based on BUChain.
+The framework is as follows:
 
 ![](frame.png)
 
-# 开发手册
-开发手册包含测试网介绍、体验跨链、开发说明
-[开发手册](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/Dev_Manual_CN.md "开发手册")
+
+# Development Manual
+
+This development manual contains introduction to the test network, experiencing cross-chain, and development instructions
+[Development Manual](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/Dev_Manual_CN.md "Development Manual").
 
 
-# 代码目录
+# Contents of Code 
 
-[公证人代码](https://github.com/zjg555543/bubichain-v3/tree/feature/crosschain/src/notary "公证人代码")
+[Code of Notary](https://github.com/zjg555543/bubichain-v3/tree/feature/crosschain/src/notary "Code of Notary")
 
-[通讯合约代码](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js "通讯合约代码")
+[Code of Communication Contract](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_comm.js "Code of Communication Contract")
 
-[资产合约代码](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js "资产合约代码")
+[Code of Asset Contract](https://github.com/zjg555543/bubichain-v3/blob/feature/crosschain/docs/cross_chain/cross_asset.js "Code of Asset Contract")
