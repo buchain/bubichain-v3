@@ -7,7 +7,6 @@ English | [中文](Dev_Manual_CN.md)
 <!-- TOC -->
 
 - [Test Network](#test-network)
-    - [Environment of Chain A](#environment-of-chain-a)
 - [Experiencing Cross-chain](#experiencing-cross-chain)
     - [Issuing an asset on Chain A](#issuing-an-asset-on-chain-a)
     - [Transferring the Asset from Chain A to the Communication Contract](#transferring-the-assets-from-chain-a-to-the-communication-contract)
